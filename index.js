@@ -49,4 +49,6 @@ function Contact(first_name, second_name, phone_number, email)
 	};
 
 
-app.listen(port);
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
